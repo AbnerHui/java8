@@ -51,7 +51,6 @@ public class StreamPractice {
                 .filter((f) -> f.getYear() == 2011)
                 .sorted((t1,t2) -> Integer.compare(t1.getValue(),t2.getValue()))
                 .forEach(System.out::println);
-
     }
 
     /**

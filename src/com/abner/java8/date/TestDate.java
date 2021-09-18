@@ -5,10 +5,7 @@ import org.junit.Test;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.*;
 
 /**
@@ -85,6 +82,7 @@ public class TestDate {
         LocalDate ld2 = LocalDate.now();
         Period period = Period.between(ld1, ld2);
         System.out.println("相差几年:"+period.getYears());
+
     }
 
     /**
@@ -124,6 +122,4 @@ public class TestDate {
         ZonedDateTime zdt1 = ldt2.atZone(ZoneId.of("Europe/Tallinn"));
         System.out.println("指定时区得时间并带上时区:"+zdt1);
     }
-
-
 }
