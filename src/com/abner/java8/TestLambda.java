@@ -117,7 +117,6 @@ public class TestLambda {
     public void test7() {
         list.stream().filter((e) -> e.getAge() > 35)
                      .forEach(System.out::println);
-
         //提取出来所有人的名字
         list.stream()
             .map(Employee::getName)
